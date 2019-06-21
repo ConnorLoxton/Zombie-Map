@@ -32,14 +32,14 @@ var score = 0;
 -33.32773801931473 115.63360244180296 weapons.png                                        
 -33.327504944929046 115.63355952645873 weapons.png                                           
 -33.3274108185581 115.6333020343933 weapons.png                                
--33.32799350398275 115.63192874337767 crab.GIF                                
--33.32754976697471 115.63239544774626 crab.GIF                          
--33.32727186991991 115.63168734456633 crab.GIF                                     
--33.32757217798889 115.63196629430388 crab.GIF                                   
--33.32816830885031 115.6330874576721 crab.GIF                                          
--33.32705224097539 115.63357025529479 crab.GIF 
+-33.32799350398275 115.63192874337767   zombie.png                               
+-33.32754976697471 115.63239544774626  zombie.png                         
+-33.32727186991991 115.63168734456633  zombie.png                                   
+-33.32757217798889 115.63196629430388 zombie.png                                    
+-33.32816830885031 115.6330874576721 zombie.png                                           
+-33.32705224097539 115.63357025529479 zombie.png 
 -33.327769394665175 115.63212722684477 weapons.png                                    
--33.32744219402638 115.63312500859831 crab.GIF `;
+-33.32744219402638 115.63312500859831 zombie.png  `;
 
 var markers = data.split("\n");
 
@@ -88,7 +88,7 @@ console.log(distance);
 if (distance < tolerance ) {
 
 var what_is_it = all_markers[i].getIcon();
-what_is_it =  what_is_it.replace(".png", ".GIF");
+what_is_it =  what_is_it.replace(".png", "");
 alert ("found the " + what_is_it);
 
 all_markers[i].setMap(null);
